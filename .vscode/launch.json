@@ -8,7 +8,7 @@
             "type": "chrome",
             "request": "launch",
             "name": "Launch Chrome against localhost",
-            "url": "file:///C:/Users/msornek/Documents/Visual%20Studio%202017/Projects/Bootcamp/Zadanie_11_4/index.html",
+            "url": "file:///C:/Projects/Kodilla/Zadanie_11_4/index.html",
             "webRoot": "${workspaceRoot}"
         }
     ]
