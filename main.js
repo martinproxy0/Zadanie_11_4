@@ -1,10 +1,10 @@
-var brands = ['Nokia','BalckBerry','Samsung'],
-colors = ['black','white','grey'];
+var brands = ['Nokia', 'BalckBerry', 'Samsung'],
+    colors = ['black', 'white', 'grey'];
 
 function Phone(brand, price, color) {
-	this.brand = brand;
-	this.price = price;
-	this.color = color;
+    this.brand = brand;
+    this.price = price;
+    this.color = color;
 }
 
 Phone.prototype.printInfo = function() {
@@ -15,15 +15,14 @@ Phone.prototype.ringing = function() {
 };
 
 function makePhone(brand, price, color) {
-    var phone = new Phone(brand, price, color);
-    return phone;
+    return new Phone(brand, price, color);
 }
 
 function makePhones() {
-    brands.forEach(function (element, index) {
-        var price = Math.random()*100;
-        makePhone(element,price,colors[index]);
-      });
+    brands.forEach(function(element, index) {
+        var price = Math.random() * 100;
+        makePhone(element, price, colors[index]);
+    });
     return phones;
 }
 
